@@ -16,12 +16,12 @@
     1> MySQL密码忘记修改
     2> 欢迎用户提需求..
 ### 下载
-[MySQLConfig](release)
+[MySQLConfig](releases)
 ### 效果图
 ![主界面](picture/mysqlconfig.png)
 ### 使用录制
-> 安装录制
+> 安装录制  
 ![安装](picture/install.gif)
 - - -
-> 卸载录制
+> 卸载录制  
 ![卸载](picture/uninstall.gif)
