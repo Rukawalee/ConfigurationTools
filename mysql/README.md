@@ -1,4 +1,6 @@
 # MySQLConfig
+### 重要更新（10.28）
+    解决安装新MySQL，旧MySQL环境变量存在问题
 ### 完善功能
     1> MySQL环境配置安装
     2> MySQL环境配置卸载
@@ -18,10 +20,10 @@
 ### 下载
 [MySQLConfig](releases)
 ### 效果图
-![主界面](picture/mysqlconfig.png)
+![主界面](pictures/mysqlconfig.png)
 ### 使用录制
 > 安装录制  
-![安装](picture/install.gif)
+![安装](pictures/install.gif)
 - - -
 > 卸载录制  
-![卸载](picture/uninstall.gif)
+![卸载](pictures/uninstall.gif)

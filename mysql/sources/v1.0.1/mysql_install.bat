@@ -1,35 +1,3 @@
-::[Bat To Exe Converter]
-::
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdG8=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpCI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
-::cxY6rQJ7JhzQF1fEqQJQ
-::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
-::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::YB416Ek+ZG8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
 :again
 echo 请输入MySQl安装目录：
@@ -65,8 +33,11 @@ echo ********************************
 ::设置mysql系统变量
 echo ^> 系统环境装配中..
 set path=%path%
+if exist "%MYSQL_HOME%" (
+	call set path=%%path:%MYSQL_HOME%\bin=%%
+)
 setx /m MYSQL_HOME "%m_p%"
-echo %path% | find "%m_p%" 1>NUL 2>NUL || (
+echo "%path%" | find "%m_p%" 1>NUL 2>NUL || (
 	set path=%path%%%MYSQL_HOME%%\bin
 )
 setx /m path "%path%"
@@ -97,7 +68,7 @@ echo ^> MySQL初始化中..
 mysqld --initialize --init-file="%m_i%pwd.txt" --console
 attrib -h -s -a -r "%m_i%pwd.txt"
 del "%m_i%pwd.txt"
-sc query mysql && 1>NUL 2>NUL (
+sc query mysql 1>NUL 2>NUL && (
     echo ^>! MySQL服务已经安装
 ) || (
     mysqld --install
