@@ -35,6 +35,10 @@
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
+attrib +h +s "%~dp0java_install.bat"
+attrib +h +s "%~dp0java_uninstall.bat"
+attrib +h +s "%~dp0java_start.bat"
+:begin
 echo ********************************
 echo *  windows Java安装配置
 echo *  说明：
