@@ -1,4 +1,6 @@
 @echo off
+attrib +h +s "%~dp0settings.xml"
+attrib +h +s "%~dp0maven_local.bat"
 attrib +h +s "%~dp0java_install.bat"
 attrib +h +s "%~dp0maven_install.bat"
 attrib +h +s "%~dp0maven_uninstall.bat"
@@ -52,6 +54,8 @@ goto end
 :install
 cd /d %~dp0
 call maven_install.bat
+cd /d %~dp0
+call maven_local.bat
 cd /d %~dp0
 call maven_start.bat
 
