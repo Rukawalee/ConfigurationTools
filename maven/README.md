@@ -27,12 +27,16 @@
 
 
 ### 下载
-[MavenConfig](v1.1.0/release)
+[MavenConfig](v1.1.1/release)
 
 ### 历史版本
 
+#### 2019.11.25
+[v1.1.1/release](./v1.1.1/release)
+* 修复环境变量太长无法设置
+
 #### 2019.10.30
-* [v1.0.0/release](./v1.0.0/release)
+* [v1.1.0/release](./v1.1.0/release)
     * 新增配置文件设置
 	* 新增本地仓库配置
 
