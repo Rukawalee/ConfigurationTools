@@ -25,12 +25,12 @@
 	2. `%JAVA_HOME%\jre\bin;`
 
 ### 下载
-[JDKConfig](v1.0.1/release)
+[JDKConfig](v1.0.0/release)
 
 ### 历史版本
 
 #### 2019.10.28
-* [v1.0.0](./v1.0.0/release)
+* [v1.0.0](./v1.0.0)
     * 快速配置Java环境变量
 
 ### 效果图
