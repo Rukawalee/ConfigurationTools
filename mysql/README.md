@@ -28,16 +28,16 @@
 * 修改密码：`ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码' PASSWORD EXPIRE NEVER;`
 
 ### 下载
-[MySQLConfig](v1.0.1/releases)
+[MySQLConfig](v1.0.1/release)
 
 ### 历史版本
 
 #### 2019.11.25
-* [v1.0.1](./v1.0.0/release)
+* [v1.0.1](./v1.0.1)
     * 修复环境变量太长无法设置
 
 #### 2019.10.28
-* [v1.0.0](./v1.0.0/release)
+* [v1.0.0](./v1.0.0)
     * 快速配置MySQl环境变量
     * 安装新MySQL替换旧MySQL环境变量
 
