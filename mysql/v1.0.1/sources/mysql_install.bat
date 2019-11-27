@@ -1,6 +1,6 @@
 @echo off
 :again
-echo 请输入MySQl安装目录：
+echo 请输入MySQL安装目录：
 set /p m_p=^>
 if not exist "%m_p%" (
 	echo ^>? 不存在目录："%m_p%"
@@ -37,9 +37,10 @@ if exist "%MYSQL_HOME%" (
 	call set path=%%path:%MYSQL_HOME%\bin=%%
 )
 setx /m MYSQL_HOME "%m_p%"
-echo "%path%" | find "%m_p%" 1>NUL 2>NUL || (
-	set path=%path%%%MYSQL_HOME%%\bin
-)
+::echo "%path%" | find "%m_p%" 1>NUL 2>NUL || (
+::设置MySQL环境变量
+set path=%path%%%MYSQL_HOME%%\bin
+::)
 setx /m path "%path%"
 echo ********************************
 echo *        环境装配完毕

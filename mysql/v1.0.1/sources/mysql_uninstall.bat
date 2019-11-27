@@ -1,7 +1,7 @@
 @echo off
 ::卸载
 :again0
-echo 请输入MySQl安装目录：
+echo 请输入MySQL安装目录：
 set /p m_p=^>
 if not exist "%m_p%" (
 	echo ^>? 不存在目录："%m_p%"
