@@ -28,9 +28,14 @@
 * 修改密码：`ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码' PASSWORD EXPIRE NEVER;`
 
 ### 下载
-[MySQLConfig](v1.0.1/release)
+[MySQLConfig](v1.1.0/release)
 
 ### 历史版本
+
+#### 2019.11.30
+* [v1.1.0](./v1.1.0)
+    * 调整文件输出情况
+    * 安装完成后启动MySQL服务
 
 #### 2019.11.25
 * [v1.0.1](./v1.0.1)
