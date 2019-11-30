@@ -4,7 +4,7 @@ attrib -h -s "%~dp0maven_install.bat"
 attrib -h -s "%~dp0maven_uninstall.bat"
 attrib -h -s "%~dp0maven_start.bat"
 
-::查找MySQL安装目录的运行环境
+::查找Maven安装目录的运行环境
 cd /d "%m_p%\bin"
 
 ::是否需要测试maven
