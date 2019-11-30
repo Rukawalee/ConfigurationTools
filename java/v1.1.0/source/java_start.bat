@@ -1,8 +1,4 @@
 @echo off
-::隐藏核心文件
-attrib -h -s "%~dp0java_install.bat"
-attrib -h -s "%~dp0java_uninstall.bat"
-attrib -h -s "%~dp0java_start.bat"
 
 ::查找JDK安装目录的运行环境
 cd /d "%j_p%\bin"
