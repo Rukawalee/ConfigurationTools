@@ -25,9 +25,15 @@
 	2. `%CATALINA_HOME%\bin;`
 
 ### 下载
-[TomcatConfig](v1.1.0/release)
+[TomcatConfig](v1.2.0/release)
 
 ### 历史版本
+
+### 2019.12.15
+* [v1.2.0](./v1.2.0)
+	* 增加配置文件用户设置
+	* 默认用户：tomcat
+	* 默认密码：tomcat
 
 #### 2019.11.30
 * [v1.1.0](./v1.1.0)

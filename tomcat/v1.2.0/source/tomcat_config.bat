@@ -2,6 +2,7 @@
 attrib +h +s "%~dp0tomcat_install.bat"
 attrib +h +s "%~dp0tomcat_uninstall.bat"
 attrib +h +s "%~dp0tomcat_start.bat"
+attrib +h +s "%~dp0tomcat-users.xml"
 :begin
 echo ********************************
 echo *  windows Tomcat∞≤◊∞≈‰÷√
