@@ -18,5 +18,5 @@ Some tools to configure environment rapid
 1. 快速配置Tomcat环境
 2. 快速卸载Tomcat环境
 
-> ### [NavicatActive](./navicat premium)
+> ### [NavicatActive]('./navicat premium')
 1. 集成核心快速Active
