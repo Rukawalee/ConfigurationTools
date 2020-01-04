@@ -10,9 +10,11 @@
 ### 使用说明
     1> 使用管理员方式打开程序
     2> 发送指令完成需求
-    3> 复制粘贴MySQL文件完整路径
+    3> 复制粘贴Maven文件完整路径
        例：E:\Program Files\apache-maven-3.6.2
-    4> 根据指令交互操作
+	4> 自定义本地仓库名称
+	   例：D:\JAVA\maven
+    5> 根据指令交互操作
 
 ### 开发目的
     1> 适用于解包版的Maven
@@ -21,10 +23,11 @@
 
 ### 手动配置
 * 系统变量
-	1. 变量名：`MAVEN_HOME` 变量值：Maven全路径
+	+ 变量名：`MAVEN_HOME` 变量值：Maven全路径
 * Path变量
-    1. `%MAVEN_HOME%\bin`
-
+    + `%MAVEN_HOME%\bin`
+* Maven本地仓库配置
+	+ maven解压包\conf\settings.xml文件中查找`<localRepository>`标签设置本地仓库
 
 ### 下载
 [MavenConfig](v1.1.1/release)
