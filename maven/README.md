@@ -27,12 +27,16 @@
 * Path变量
     + `%MAVEN_HOME%\bin`
 * Maven本地仓库配置
-	+ maven解压包\conf\settings.xml文件中查找`<localRepository>`标签设置本地仓库
+	+ maven解压包\conf\settings.xml文件中查找`<localRepository>`标签，取消注释，设置本地仓库
 
 ### 下载
-[MavenConfig](v1.1.1/release)
+[MavenConfig](v1.1.2/release)
 
 ### 历史版本
+
+#### 2020.01.04
+* [v1.1.2](./v1.1.2)
+	+ 修改本地仓库默认设置
 
 #### 2019.11.25
 * [v1.1.1](./v1.1.1)
